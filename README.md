@@ -25,7 +25,7 @@ To use this Contact Manager Application, follow these steps:
 
 2. Navigate to the project directory: cd contact-list
 
-3.Install the required dependencies: npm install
+3. Install the required dependencies: npm install
 
 4. npm start
 
