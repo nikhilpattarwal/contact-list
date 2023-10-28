@@ -11,6 +11,7 @@ import { deleteContact } from "../../redux/reducer/contactReducer";
 import { LiaMehBlank } from "react-icons/lia";
 import { contactActions } from "../../redux/reducer/contactReducer";
 import { toast } from "react-toastify";
+import { MdArrowBackIosNew } from "react-icons/md"
 
 export const Contact = () => {
   const [inputVal, setInputVal] = useState({ name: "", phone: "", id: "" });
@@ -61,18 +62,6 @@ export const Contact = () => {
     }
   };
 
-  const valueWhileEditing = (contactId)=>{
-    const selectedContact = contacts.find((user) => user.id === contactId);
-    console.log(selectedContact);
-    if (selectedContact) {
-      setInputVal({
-        name: selectedContact.name,
-        phone: selectedContact.phone,
-        id: selectedContact.id,
-      });
-    }
-  }
-
   //function to toggle edit button
   const isEditDisabled = (contactId) => {
     return editContactId !== contactId;
@@ -112,7 +101,7 @@ export const Contact = () => {
         <div className={styles.innerContainer}>
           <div className={styles.headingIcon}>
             <h2>Contact List</h2>
-            <FcPlus className={styles.plusIcon} onClick={() => handleAdd()} />
+           <div className={styles.plusIcon} onClick={() => handleAdd()}>{handleForm?<MdArrowBackIosNew/>:<FcPlus />}</div> 
           </div>
           {contacts.length !== 0 ? (
             !handleForm ? (
@@ -144,7 +133,7 @@ export const Contact = () => {
                   </div>
                 </div>
               ))
-            ) : null
+            ) : ""
           ) : (
             <LiaMehBlank className={styles.emoji} />
           )}

@@ -101,8 +101,7 @@
 }
 
 .plusIcon{
-    height: 2rem; 
-    width: 2rem;  
+    font-size: xx-large;
     cursor: pointer;
 }
 .headingIcon{

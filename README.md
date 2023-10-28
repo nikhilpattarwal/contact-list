@@ -21,9 +21,9 @@ To use this Contact Manager Application, follow these steps:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/nikhilpattarwal/contact-manager-app.git
+   git clone https://github.com/nikhilpattarwal/contact-list.git
 
-2. Navigate to the project directory: cd contact-manager-app
+2. Navigate to the project directory: cd contact-list
 
 3.Install the required dependencies: npm install
 
