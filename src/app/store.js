@@ -1,8 +1,11 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { combineReducers, configureStore} from '@reduxjs/toolkit';
+import { contactReducer } from '../redux/reducer/contactReducer';
 
+
+const rootReducers = combineReducers({contactReducer})
 export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+  reducer: rootReducers,
+  middleware: (getDefaultMiddleware) =>  getDefaultMiddleware({
+    serializableCheck: false
+  })
 });

@@ -1,46 +1,47 @@
-# Getting Started with Create React App and Redux
+# Contact List Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+Manage your contacts efficiently with the Contact Manager Application. This web application is built using React and Redux, offering a convenient way to organize and interact with your contacts.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Add Contacts:** Easily add new contacts by providing their name and phone number. The application generates a unique ID for each contact.
 
-### `npm start`
+- **Edit Contacts:** Update contact details with a simple editing feature. You can modify the name and phone number of existing contacts.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Delete Contacts:** Remove unwanted or outdated contacts from your list. The application ensures seamless contact deletion.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Real-Time Notifications:** Receive notifications for successful contact additions, updates, and deletions using the React-Toastify library.
 
-### `npm test`
+- **User-Friendly Interface:** The application provides an intuitive and clean user interface for efficient contact management.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
+To use this Contact Manager Application, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository to your local machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/nikhilpattarwal/contact-manager-app.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project directory: cd contact-manager-app
 
-### `npm run eject`
+3.Install the required dependencies: npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Open your web browser and access the application at http://localhost:3000. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Dependencies
 
-## Learn More
+This project relies on the following dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+React: A JavaScript library for building user interfaces.
+Redux: A state management library for React applications.
+Axios: A promise-based HTTP client for making API requests.
+React-Toastify: A library for displaying notifications in your React application.
+Make sure to install these dependencies before running the application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
+
+If you would like to contribute to this project, feel free to submit a pull request or open an issue. Your contributions are welcome!
